@@ -441,3 +441,72 @@ body footer {
 .checkbox:checked + .fake::before{
     opacity: 1;
 }
+
+.repair-types-section {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+.repair-types-section__title {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #181818;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+.repair-types-section__icon {
+    margin-top: 20px;
+}
+
+.repair-types {
+    display: flex;
+    justify-content: space-between;
+}
+
+.repair-types__item {
+    max-width: 392px;
+    max-width: 608px;
+}
+
+.repair-types__item img {
+    position: relative;
+    z-index: -1;
+}
+
+.repair-types__item h3 {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #363636;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin: 25px 0px 13px 34px;
+}
+
+.repair-type-info {
+    max-width: 330px;
+    max-height: 286px;
+    background-color: #FFFFFF;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+    margin-top: -127px;
+    margin: -127px auto 0px;
+}
+
+.repair-type-info__list {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 27px;
+    color: #959595;
+    padding-inline-start: 14px;
+    margin-left: 34px;
+}
