@@ -80,27 +80,6 @@ body {
 
 }
 
-input {
-    outline: none;
-}
-
-.input {
-    height: 30px;
-    width: 230px;
-    border: none;
-    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
-    box-sizing: border-box;
-    color: #363636;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 23px;
-}
-
-.input::placeholder {
-    color: #363636;
-}
-
 .title {
     font-family: Yeseva One;
     font-style: normal;
@@ -122,6 +101,129 @@ input {
     color: #E3B873;
     margin-block-start: 0px;
     margin-block-end: 0px;
+}
+
+.section-title {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #181818;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+.section-icon {
+    margin-top: 20px;
+}
+
+.user-form__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-form__agreement {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+    color: #181818;
+}
+
+input {
+    outline: none;
+}
+
+.input {
+    border: none;
+    box-sizing: border-box;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.input_black-color {
+    color: #363636;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+}
+
+.input_black-color::placeholder {
+    color: #363636;
+}
+
+.input_white-color {
+    color: #FFFFFF;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.input_white-color::placeholder {
+    color: #FFFFFF;
+}
+
+.input_size-small {
+    height: 30px;
+    width: 230px;
+}
+
+.input_size-medium {
+    height: 35px;
+    width: 408px;
+}
+
+.input_size-large {
+    height: 30px;
+    width: 520px;
+}
+
+.user-form__label {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 21px;
+
+}
+
+.user-form__label_dark {
+    color: rgba(54, 54, 54, 0.5);
+}
+
+.user-form__label_light {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.label {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+}
+
+.checkbox{
+    display: none;
+}
+
+.fake{
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    border-radius: 1px;
+    background: #E3B873;
+    color: #fff;
+    justify-content: center;
+    margin-right: 9px;
+}
+
+.fake::before{
+    content: url(../img/checkmark.svg);
+    opacity: 0;
+    transition: .2s;
+}
+
+.checkbox:checked + .fake::before{
+    opacity: 1;
 }
 
 .header-footer-prop {
@@ -245,14 +347,12 @@ body footer {
 
 }
 
-
 .project-description {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 57px;
 }
-
 
 .project-description__item {
     width: 190px;
@@ -377,14 +477,14 @@ body footer {
     margin: 21px auto 62.5px;
 }
 
-.onlite-control__line {
+.online-control__line {
     width: 55px;
     border: 1.5px solid #E3B873;
     opacity: 0.3;
     border-radius: 30px;
 }
 
-.onlite-control__text {
+.online-control__text {
     max-width: 681px;
     margin: 34.5px auto 91.5px;
     text-align: center;
@@ -396,7 +496,7 @@ body footer {
     color: #363636;
 }
 
-.user-form {
+.online-control__user-form {
     max-width: 800px;
     display: flex;
     flex-wrap: wrap;
@@ -405,60 +505,12 @@ body footer {
     padding-bottom: 148px;
 }
 
-.user-form__item {
+.user-form__item_margin {
     margin-right: 57px;
-    display: flex;
-    flex-direction: column;
 }
 
-.user-form__label {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 13px;
-    line-height: 21px;
-    color: rgba(54, 54, 54, 0.5);
-}
-
-.user-form__agreement {
-    margin-top: 35px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 23px;
-    color: #181818;
-    display: flex;
-    align-items: center;
-}
-
-.label {
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-}
-
-.checkbox{
-    display: none;
-}
-
-.fake{
-    display: inline-flex;
-    width: 18px;
-    height: 18px;
-    border-radius: 1px;
-    background: #E3B873;
-    color: #fff;
-    justify-content: center;
-    margin-right: 9px;
-}
-
-.fake::before{
-    content: url(../img/checkmark.svg);
-    opacity: 0;
-    transition: .2s;
-}
-
-.checkbox:checked + .fake::before{
-    opacity: 1;
+.online-control__agreement {
+    margin-top: 33px;
 }
 
 .repair-types-section {
@@ -466,23 +518,6 @@ body footer {
     display: flex;
     flex-direction: column;
     margin-bottom: 124px;
-}
-
-.repair-types-section__title {
-    font-family: Yeseva One;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 28px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #181818;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-}
-
-.repair-types-section__icon {
-    margin-top: 20px;
 }
 
 .repair-types {
@@ -579,6 +614,60 @@ body footer {
     font-size: 14px;
     line-height: 19px;
     color: #363636;
+}
+
+/* .reviews-section-background {
+    
+} */
+
+.reviews-section {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 371px;
+}
+
+.reviews-section__losung {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 29px;
+    text-align: center;
+    color: #363636;
+    margin-top: 24px;
+    margin-bottom: 39px;
+}
+
+.reviews {
+    display: flex;
+    justify-content: space-between;
+}
+
+.review-content {
+    max-width: 376px;
+    max-width: 428px;
+    padding-bottom: 27px;
+}
+
+.review-content__client {
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.review-content__client img {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 38px;
+    margin-right: 23px;
+}
+
+.review-content__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 23px;
+    color: #959595;
+    text-align: justify;
 }
 
 .about-us-section {
