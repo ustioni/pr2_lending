@@ -21,7 +21,6 @@ body {
     min-width: 1256px;
     max-width: 1440px;
     margin: 0px auto;
-    height: 100%;
 }
 
 .button {
@@ -77,7 +76,6 @@ body {
     line-height: 25px;
     text-transform: uppercase;
     color: #FFFFFF;
-
 }
 
 .title {
@@ -312,6 +310,10 @@ body footer {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
+.transparent-layer_gradient {
+    background-image: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
+}
+
 .projects-section-background {
     width: 100%;
     background-color: #131313;
@@ -528,7 +530,7 @@ body footer {
 
 .repair-types__item {
     max-width: 392px;
-    max-width: 608px;
+    max-height: 608px;
     padding-bottom: 28px;
 }
 
@@ -645,8 +647,13 @@ body footer {
 
 .review-content {
     max-width: 376px;
-    max-width: 428px;
+    max-height: 428px;
     padding-bottom: 27px;
+    background: #FFFFFF;
+    border: none;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+    padding: 24px 38px 67px 20px;
+    position: relative;
 }
 
 .review-content__client {
@@ -661,13 +668,69 @@ body footer {
     margin-right: 23px;
 }
 
+.client-name {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    color: #181818;
+}
+
 .review-content__text {
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
     line-height: 23px;
     color: #959595;
-    text-align: justify;
+    text-align: left;
+    max-width: 318px;
+}
+
+.review-content__label-group {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: -26px;
+    left: 0px;
+}
+
+.label-group__item {
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 13px 0px 17px;
+    background-color: #E3B873;
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+    border: none;
+    height: 54px;
+    border-radius: 0px;
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.label-group__item:first-child {
+    border-right: 0.75px solid #FFFFFF;
+}
+
+.label-group__item img {
+    margin-right: 15px;
+}
+
+.ask-question {
+    position: relative;
+    z-index: 2;
+    width: 883px;
+    height: 445px;
+    background-color: black;
+    margin: auto;
+    margin-bottom: -222px;
 }
 
 .about-us-section {
@@ -680,6 +743,38 @@ body footer {
     color: #FFFFFF;
 }
 
+.company-contacts {
+    display: flex;
+    justify-content: center;
+    margin-top: 275px;
+    margin-bottom: 26px;
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 43px;
+}
+
+.social-media-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E3B873;
+    width: 28px;
+    height: 28px;
+    border-radius: 14px;
+    border: none;
+}
+
 .about-us__map {
     height: 465px;
     width: 925px;
@@ -687,5 +782,4 @@ body footer {
     background-size: cover;
     margin: auto;
     margin-bottom: 66px;
-    margin-top: 423px;
 }
