@@ -618,15 +618,81 @@ body footer {
     color: #363636;
 }
 
-/* .reviews-section-background {
-    
+.design-styles-background {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/styles_section_backgnd.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: #FFFFFF;
+}
+
+.design-styles-section {
+    display: flex;
+    margin: auto;
+}
+
+.design-styles-section__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.design-styles-section__item:first-child {
+    margin-right: 210px;
+}
+
+.design-styles-section__item:nth-child(2) {
+    margin-right: 43px;
+}
+
+.styles-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-inline-start: 0px
+}
+
+.styles-list__item {
+    width: fit-content;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 38px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+.styles-list__item:hover {
+    cursor: pointer;
+    color: #E3B873;
+    border-bottom: 1px solid #E3B873;
+}
+
+.galery {
+    max-width: 353px;
+}
+
+/* .galery__item {
+
 } */
+
+.galery__item:first-child {
+    margin-bottom: 38px;
+}
+
+.reviews-section-background {
+    margin-top: 110px;
+    background-image: url(../img/our_client_backgnd.jpg);
+    background-repeat: repeat-x;
+    background-position: bottom
+}
 
 .reviews-section {
     background-color: transparent;
     display: flex;
     flex-direction: column;
-    margin-bottom: 371px;
+    padding-bottom: 371px;
 }
 
 .reviews-section__losung {
@@ -730,15 +796,15 @@ body footer {
     height: 445px;
     background-color: black;
     margin: auto;
-    margin-bottom: -222px;
+    margin-top: -223px;
 }
 
 .about-us-section {
     width: 100%;
     height: 100vh;
     background-image: url(../img/about_us_backgnd.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
     position: relative;
     color: #FFFFFF;
 }
@@ -746,7 +812,7 @@ body footer {
 .company-contacts {
     display: flex;
     justify-content: center;
-    margin-top: 275px;
+    margin-top: 52px;
     margin-bottom: 26px;
     font-family: Yeseva One;
     font-style: normal;
