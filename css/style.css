@@ -21,6 +21,7 @@ body {
     min-width: 1256px;
     max-width: 1440px;
     margin: 0px auto;
+    height: 100%;
 }
 
 .button {
@@ -101,6 +102,10 @@ body {
     margin-block-end: 0px;
 }
 
+.no-letter-spacing {
+    letter-spacing: normal;
+}
+
 .section-title {
     font-family: Yeseva One;
     font-style: normal;
@@ -142,6 +147,7 @@ input {
     font-weight: normal;
     font-size: 14px;
     line-height: 23px;
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
 }
 
 .input_black-color {
@@ -155,6 +161,7 @@ input {
 
 .input_white-color {
     color: #FFFFFF;
+    background-color: transparent;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
@@ -574,9 +581,9 @@ body footer {
     margin-block-end: 0px;
 }
 
-
 .our-advantages-section {
     display: flex;
+    padding-bottom: 322.5px;
 }
 
 .advantages-list {
@@ -584,6 +591,8 @@ body footer {
     background-size: cover;
     padding-top: 23px;
     padding-bottom: 46px;
+    padding-right: 79px;
+    margin-right: 131px;
 }
 
 .advantages-list__item {
@@ -618,9 +627,43 @@ body footer {
     color: #363636;
 }
 
+.call-measurer-form {
+    /* max-width: 506px;
+    max-height: 509px; */
+    width: 506px;
+    height: 509px;
+    background-color: #000000;
+    margin-top: 106px;
+}
+
+.call-mesurer-form-wrapper {
+    margin: 28px 49px;
+}
+
+.call-measurer-form__title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-bottom: 36px;
+}
+
+.call-measurer-form-margin {
+    margin-bottom: 40px;
+}
+
+.call-mesurer-form__agreement {
+    margin-top: 16px;
+    margin-bottom: 30px;
+}
+
 .design-styles-background {
     width: 100%;
-    height: 100vh;
+    height: 864px;
     background-image: url(../img/styles_section_backgnd.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -631,6 +674,7 @@ body footer {
 .design-styles-section {
     display: flex;
     margin: auto;
+    justify-content: center;
 }
 
 .design-styles-section__item {
@@ -640,10 +684,16 @@ body footer {
 
 .design-styles-section__item:first-child {
     margin-right: 210px;
+    margin-top: 137px;
 }
 
 .design-styles-section__item:nth-child(2) {
     margin-right: 43px;
+    margin-top: -40px;
+}
+
+.design-styles-section__item:nth-child(3) {
+    margin-top: -112.5px;
 }
 
 .styles-list {
@@ -660,7 +710,11 @@ body footer {
     font-size: 20px;
     line-height: 38px;
     color: #FFFFFF;
-    margin-bottom: 24px;
+    margin-bottom: 12px;
+}
+
+.styles-list__item:first-child {
+    margin-top: 43px;
 }
 
 .styles-list__item:hover {
