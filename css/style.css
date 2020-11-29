@@ -36,7 +36,6 @@ body footer {
     max-width: 1440px;
     margin: 0px auto;
     height: inherit;
-    /* background-color: brown; */
 }
 
 @media screen and (max-width: 1300px) {
@@ -53,14 +52,15 @@ body footer {
     }
 }
 
-.content-to-left {
+.content-to-right {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .title {
-    font-family: Yeseva One;
+    font-family: "Yeseva One";
     font-style: normal;
     font-weight: normal;
     text-transform: uppercase;
@@ -147,7 +147,7 @@ body footer {
 .btn-transparent {
     background: transparent;
     border: 1px solid #FFFFFF;
-    font-family: Nunito Sans;
+    font-family: "Nunito Sans";
     font-style: italic;
     font-weight: normal;
     font-size: 0.69em;
@@ -192,7 +192,7 @@ body footer {
     bottom: -26px;
     box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
     text-transform: uppercase;
-    font-family: Yeseva One;
+    font-family: "Yeseva One";
     font-size: 1.125em;
     line-height: 1.4em;
 }
@@ -496,6 +496,10 @@ body footer {
     width: 50%;
 }
 
+.col-5 {
+    width: 20%;
+}
+
 .project-description {
     display: flex;
     flex-direction: row;
@@ -690,6 +694,7 @@ body footer {
 
 .reparir-types-section {
     background-color: inherit;
+    padding-bottom: 12.5em;
 }
 
 .reparir-types-wrapper {
@@ -747,6 +752,198 @@ body footer {
     .type-list {
         margin-left: 0;
     }
+}
+
+.our-advantages-section {
+    position: relative;
+    background-image: url(../img/backgnd_with_houses.jpg);
+    background-repeat: no-repeat;
+    padding-bottom: 15.125em;
+}
+
+@media (max-width: 768px) {
+    .our-advantages-section {
+        display: none;
+    }
+}
+
+.our-advantages-section .sale-mark {
+    margin-right: 9.3em;
+    margin-top: 2.4em;
+}
+
+.sale-mark p {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.sale-mark .mark-icon {
+    width: 72px;
+    height: 72px;
+    border-radius: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E3B873;
+    margin-right: 1.4em;
+}
+
+.our-advantages-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.advantages-list {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin-left: 14.5em;
+}
+
+.advantages-list-item {
+    display: flex;
+    align-items: center;
+}
+
+.advantages-list-item:nth-of-type(1),
+.advantages-list-item:nth-of-type(2),
+.advantages-list-item:nth-of-type(3) {
+    margin-bottom: 5.375em;
+}
+
+.advantages-list-item p {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    font-size: 0.875em;
+    line-height: 1.35em;
+}
+
+.list-bullet {
+    background: #E3B873;
+    border: 8px solid #FFFFFF;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+    border-radius: 30px;
+    width: 42px;
+    height: 42px;
+    margin-right: 9px;
+    text-align: center;
+    font-family: "Yeseva One";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 42px;
+    color: #FFFFFF;
+}
+
+.call-measurer-form {
+    max-width: max-content;
+    max-height: max-content;
+    background-color: #131313;
+    display: flex;
+    flex-direction: column;
+    padding: 28px 49px;
+}
+
+.call-measurer-form .title {
+    font-family: "Nunito Sans";
+    text-transform: none;
+    margin-bottom: 2.4em;
+}
+
+.call-measurer-form .btn {
+    align-self: flex-end;
+}
+
+.call-measurer-form .form-item:nth-of-type(1),
+.call-measurer-form .form-item:nth-of-type(2) {
+    margin-bottom: 3em;
+}
+
+.call-measurer-form .checkbox-label {
+    margin-top: 1em;
+    margin-bottom: 2.4em;
+}
+
+.design-styles {
+    position: relative;
+    min-height: 920px;
+    background-image: url(../img/desingns_section_backgnd.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+    .design-styles {
+        display: none;
+    }
+}
+
+.design-styles-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.design-styles-wrapper .col-5 {
+    margin-top: 8.6em;
+}
+
+.styles-list {
+    list-style: none;
+    padding-inline-start: 0em;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.styles-list-item {
+    width: fit-content;
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 0.9em;
+    font-size: 1.25em;
+    line-height: 1.9em;
+    color: #FFFFFF;
+}
+
+.styles-list-item:first-child {
+    margin-top: 1.9em;
+}
+
+.styles-list-item:hover {
+    cursor: pointer;
+    color: #E3B873;
+    border-bottom: 1px solid #E3B873;
+}
+
+.design-styles-section-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.design-styles-section-item:first-child {
+    margin-right: 210px;
+}
+
+.design-styles-section-item:nth-child(2) {
+    margin-right: 43px;
+    margin-top: -40px;
+}
+
+.design-styles-section-item:nth-child(3) {
+    margin-top: -112.5px;
+}
+
+.galery {
+    max-width: 353px;
+}
+
+/* .galery__item {
+
+} */
+
+.galery-item:first-child {
+    margin-bottom: 38px;
 }
 
 .reviews-section {
@@ -816,7 +1013,7 @@ body footer {
 }
 
 .client-name {
-    font-family: Yeseva One;
+    font-family: "Yeseva One";
     font-style: normal;
     font-weight: normal;
     font-size: 1.125em;
@@ -874,7 +1071,7 @@ body footer {
     border: none;
     height: 54px;
     border-radius: 0px;
-    font-family: Yeseva One;
+    font-family: "Yeseva One";
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
