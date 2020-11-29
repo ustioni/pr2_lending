@@ -25,6 +25,12 @@ body footer {
     height: 133px;
 }
 
+@media (max-width: 768px) {
+    body footer {
+       display: none;
+    }
+}
+
 .container {
     min-width: 1256px;
     max-width: 1440px;
@@ -697,7 +703,6 @@ body footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 1.9em;
 }
 
 .type_item img {
@@ -766,7 +771,8 @@ body footer {
 }
 
 .section-icon {
-    margin-top: 20px;
+    margin-top: 1.25em;
+    margin-bottom: 1.9em;
 }
 
 .reviews-section-losung {
@@ -776,7 +782,6 @@ body footer {
     line-height: 29px;
     text-align: center;
     color: #363636;
-    margin-top: 24px;
     margin-bottom: 39px;
 }
 
@@ -895,6 +900,7 @@ body footer {
 .about-us-background {
     width: 100%;
     height: 100%;
+    background-color: #181818;
     background-image: url(../img/about_us_backgnd.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -913,6 +919,21 @@ body footer {
     margin: auto;
     margin-top: -223px;
     padding: 2.15em 0em 2.15em;
+}
+
+@media (max-width: 768px) {
+    .about-us-background {
+        background-image: none;
+    }
+
+    .question-form {
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .about-us-background .transparent-layer {
+        display: none;
+    }
 }
 
 .question-form .title {
@@ -938,6 +959,27 @@ body footer {
 
 .question-form > .checkbox-label {
     margin-bottom: 3.125em;
+}
+
+@media (max-width: 768px) {
+    .about-us-section .question-form-inline {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .about-us-section .form-item:first-of-type {
+        margin-bottom: 63px;
+    }
+
+    .about-us-section .form-item {
+        width: 100%;
+        margin-bottom: 22px;
+    }
+
+    .about-us-section .btn-submit {
+        width: 100%;
+    }
 }
 
 .company-contacts {
@@ -980,6 +1022,14 @@ body footer {
 }
 
 @media screen and (max-width: 768px) {
+    .company-contacts {
+        margin-top: 0em;
+    }
+
+    .company-contacts .social-media {
+        margin-bottom: 3em;
+    }
+
     .company-location {
         width: 100%;
         height: 255px;
